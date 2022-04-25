@@ -9,13 +9,17 @@ body {
 	font-size: 18px;
 	line-height: 1.8;
 	color: $white;
-	background-color: $bg;
+	background-color: $black;
 	display: flex;
 	flex-direction: column;
 }
 
 path {
 	transition: opacity 0.5s;
+}
+
+section {
+	margin-bottom: 250px;
 }
 
 .main {
@@ -29,6 +33,7 @@ path {
 }
 
 .suptitle {
+	display: block;
 	text-transform: uppercase;
 	color: $accent;
 	letter-spacing: 6px;
@@ -43,7 +48,7 @@ path {
 		height: 2px;
 		background-color: $accent;
 		left: 0;
-		top: 1px;
+		top: 10px;
 	}
 }
 
@@ -53,14 +58,19 @@ path {
 }
 
 .button {
-	max-width: 240px;
+	max-width: 241px;
 	width: 100%;
 	background-color: $bg-2;
-	padding: 24px 75px 23px 69px;
+	padding: 21px 69px 19px 69px;
 	color: $black;
 	font-size: 17px;
 	font-weight: 700;
 	border-radius: 8px;
+	transition: background-color 0.5s;
+
+	&:hover {
+		background-color: $accent;
+	}
 }
 
 .link {
@@ -68,16 +78,21 @@ path {
 	color: $accent;
 	font-weight: 700;
 	padding-right: 25px;
+	transition: opacity 0.5s;
+
+	&:hover {
+		opacity: 0.6;
+	}
 
 	&::after {
 		content: '';
 		position: absolute;
-		right: 0;
-		width: 16px;
+		right: -14px;
+		top: 5px;
+		width: 27px;
 		height: 24px;
 		background-image: url('../images/icons/arrow-right.svg');
 		background-repeat: no-repeat;
-		background-size: cover;
 	}
 }
 

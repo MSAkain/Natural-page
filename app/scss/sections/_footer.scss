@@ -1,0 +1,151 @@
+.footer {
+	padding-bottom: 118px;
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		padding-bottom: 55px;
+		margin-bottom: 55px;
+		border-bottom: 1px solid rgba($white, 0.3);
+	}
+
+	&__box {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: 500px;
+		width: 100%;
+	}
+
+	&__qust {
+		margin-right: 55px;
+		font-size: 22px;
+	}
+
+	&__middle {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 100px;
+		margin-right: 96px;
+	}
+
+	&__label {
+		font-size: 36px;
+		font-weight: 700;
+		letter-spacing: -0.3px;
+		max-width: 361px;
+		margin-bottom: 50px;
+	}
+
+	&__input {
+		background-color: transparent;
+		border: none;
+		border-bottom: 1px solid rgba($white, 0.3);
+		padding: 19px 14px 11px 14px;
+		color: $white;
+
+		&::placeholder {
+			font-size: 15px;
+			opacity: 0.5;
+			letter-spacing: -0.204545px;
+		}
+	}
+
+	&__btn {
+		width: 69px;
+		height: 69px;
+		background-color: $bg-2;
+		border-radius: 8px 8px 0px 0px;
+		margin-left: -5px;
+		transition: background-color 0.5s;
+
+		&:hover {
+			background-color: $accent;
+		}
+
+		svg {
+			margin-top: 9px;
+		}
+	}
+
+	&__nav {
+		display: flex;
+	}
+
+	&__list {
+		&:not(:last-child) {
+			margin-right: 185px;
+		}
+	}
+
+	&__item {
+		font-size: 20px;
+		letter-spacing: -0.204545px;
+
+		&:not(:last-child) {
+			margin-bottom: 25px;
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		color: $accent-3;
+	}
+
+	&__link {
+		transition: opacity 0.5s;
+
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+
+	&__bottom {
+		margin: 0 40px;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 156px;
+	}
+
+	&__socials {
+		display: flex;
+		align-items: center;
+	}
+
+	&__text {
+
+		a {
+			letter-spacing: -0.204545px;
+			font-size: 15px;
+
+			&:not(:last-child) {
+				margin-right: 88px;
+			}
+		}
+	}
+
+	&__social {
+		&:not(:last-child) {
+			margin-right: 52px;
+		}
+	}
+
+	&__ref {
+		&:hover {
+			path {
+				fill: $accent;
+			}
+		}
+
+		path {
+			transition: fill 0.5s;
+		}
+	}
+
+	&__copyright {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
