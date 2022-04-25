@@ -1,0 +1,86 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: $open-sans;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.8;
+	color: $white;
+	background-color: $bg;
+	display: flex;
+	flex-direction: column;
+}
+
+path {
+	transition: opacity 0.5s;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+.container {
+	max-width: 1490px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.suptitle {
+	text-transform: uppercase;
+	color: $accent;
+	letter-spacing: 6px;
+	position: relative;
+	padding-left: 96px;
+	margin-bottom: 27px;
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 72px;
+		height: 2px;
+		background-color: $accent;
+		left: 0;
+		top: 1px;
+	}
+}
+
+.title {
+	font-size: 64px;
+	margin-bottom: 27px;
+}
+
+.button {
+	max-width: 240px;
+	width: 100%;
+	background-color: $bg-2;
+	padding: 24px 75px 23px 69px;
+	color: $black;
+	font-size: 17px;
+	font-weight: 700;
+	border-radius: 8px;
+}
+
+.link {
+	position: relative;
+	color: $accent;
+	font-weight: 700;
+	padding-right: 25px;
+
+	&::after {
+		content: '';
+		position: absolute;
+		right: 0;
+		width: 16px;
+		height: 24px;
+		background-image: url('../images/icons/arrow-right.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+.logo {
+	object-fit: cover;
+}
